@@ -1,0 +1,9 @@
+<div class="home">
+  <ul *ngIf="posts$!">
+    <li *ngFor="let item of (posts$ | async)">
+      <div>{{ item.title }}</div>
+      <div>{{ item.body }}</div>
+    </li>
+  </ul>
+</div>
+
